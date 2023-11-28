@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="Tailwind.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+<div class="flex items-center">
+    <img class="w-48 flex justify-start" src="img/santehos.jpeg">
+</div>
+
+<h1 class="flex justify-center pb-6 text-4xl font-semibold">Welcome to Angkor Sante Hostpital</h1>
+
+
+<figure class="bg-slate-100 rounded-xl p-6 dark:bg-slate-700 max-w-2xl mx-auto flex justify-center items-center">
+    <img class="w-24 h-24 rounded-full mx-auto mr-8" src="img/1941376_748807285149966_1189864624699750724_o.jpg" alt="" width="384" height="512">
+    <div class="pt-6 space-y-4">
+      <blockquote>
+        <p class="text-lg font-medium text-white">
+          “Step Outside Yourself to discover What’s Important to Someone else..!”
+        </p>
+      </blockquote>
+      <figcaption class="font-medium">
+        <div class="text-sky-500 dark:text-sky-400">
+          Dr. Mo Satdin
+        </div>
+        <div class="text-slate-400">
+          General Surgeon, Siem Reab
+        </div>
+      </figcaption>
+    </div>
+  </figure>
+
+
+<form class="max-w-sm mx-auto">
+    <div class="grid gap-4 md:grid-cols-2">
+        <div>
+            <label for="first_name" class="block text-sm font-medium text-gray-900 dark:text-white">First name</label>
+            <input type="text" id="first_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="First Name" required>
+        </div>
+        <div>
+            <label for="last_name" class="block text-sm font-medium text-gray-900 dark:text-white">Last name</label>
+            <input type="text" id="last_name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Last Name" required>
+        </div>
+    </div>
+    <div class="mb-6">
+        <label for="email" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email address</label>
+        <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Your Email Address" required>
+    </div> 
+</form>
+
+
+
+
+<form class="max-w-sm mx-auto">
+    <div class="flex items-center">
+        <div id="dropdown-phone-button" data-dropdown-toggle="dropdown-phone" class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-s-lg hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600" type="button">
+            <img class="w-5" src="img/Cambodia Flag Icon.webp">
+        <p class="pl-2">+855</p>
+    </div>
+        <label for="phone-input" class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Phone number:</label>
+        <div class="relative w-full">
+            <input type="text" id="phone-input" class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-lg border-s-0 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-s-gray-700  dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+        </div>
+    </div>
+</form>
+
+<form class="max-w-sm mx-auto">
+<label for="countries" class="block text-sm font-medium text-gray-900 dark:text-white">Select an option</label>
+<select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 flex w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+  <option selected>Choose Your Health Option</option>
+  <option>Surgery</option>
+  <option>Physical Medicaton</option>
+  <option>Therapist</option>
+  <option>Injuries</option>
+</select>
+</form>
+
+<div class="max-w-sm mx-auto">
+    <label for="description" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Describe Your Concern</label>
+    <input type="description" id="description" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Describe Your Concern" required>
+</div> 
+
+<div class="max-w-sm mx-auto mt-5">
+<button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+</div>
+
+</body>
+</html>
