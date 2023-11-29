@@ -98,5 +98,17 @@
 <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
 </div>
 
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyqVCkjqZwk3WQbIjfn3nGymlZ5GmLHxG96wal3dfmqOgCP2DNZF_tTxqIA4C05znns/exec'
+    const form = document.forms['submit-to-google-sheet']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => console.log('Success!', response))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
 </body>
 </html>
